@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    width: 414px;
+}
+
+
+.top-bar {
+    background-color: #CF2B2B;
+    color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 92px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 21px;
+    margin-bottom: 31px;
+}
+
+.top-bar h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+}
+
+.top-bar p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.categoria {
+    font-family: 'Righteous', cursive;
+    background-color: green;
+    color: #333333;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 27px;
+    padding-left: 19px;
+    width: 100%;
+}
+
+.menu-categoria {
+    background-color: gold;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 17px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.prato {
+    background-color: lightcoral;
+    margin-right: 16px;
+    width: 172px;
+    height: 216px;
+    padding: 18px 14px 13px 14px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.prato img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+
+.prato h1 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.prato p:first-of-type {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+.prato p:last-of-type {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.prato ion-icon {
+    position: absolute;
+    font-size: 19px;
+    right: 11px;
+    bottom: 14px;
+}
+
+.bottom-bar {
+    background-color: #FFFFFF;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.bottom-bar button {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+}
+
+.pedido-incompleto {
+    background-color: #CBCBCB;
+    font-weight: 400;
+}
+
+.pedido-completo {
+    background-color: #32B72F;
+    font-weight: 700;
+}
