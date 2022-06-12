@@ -14,8 +14,8 @@ function selecionarComida(elemento) {
         comida.classList.remove("comidaSelecionada");
     }
     elemento.classList.add("comidaSelecionada");
-    comidaEscolhida = comida.getElementsByTagName("h1")[0].innerHTML;
-    custoComida = Number(comida.getElementsByTagName("p")[0].innerHTML);
+    comidaEscolhida = elemento.getElementsByTagName("h1")[0].innerHTML;
+    custoComida = Number(elemento.getElementsByTagName("p")[0].innerHTML);
 }
 
 function selecionarBebida(elemento) {
@@ -23,8 +23,8 @@ function selecionarBebida(elemento) {
     if (bebida !== null) {
         bebida.classList.remove("bebidaSelecionada");
     }
-    elemento.classList.add("bebidaSelecionada");
-    custoBebida = Number()
+    bebidaEscolhida = elemento.getElementsByTagName("h1")[0].innerHTML;
+    custoBebida = Number(elemento.getElementsByTagName("p")[0].innerHTML);
 }
 
 function selecionarSobremesa(elemento) {
@@ -32,8 +32,8 @@ function selecionarSobremesa(elemento) {
     if (sobremesa !== null) {
         sobremesa.classList.remove("sobremesaSelecionada");
     }
-    elemento.classList.add("sobremesaSelecionada");
-    custoSobremesa = Number()
+    sobremesaEscolhida = elemento.getElementsByTagName("h1")[0].innerHTML;
+    custoSobremesa = Number(elemento.getElementsByTagName("p")[0].innerHTML);
 }
 
 function finalizarPedido() {
@@ -52,7 +52,6 @@ function enviarPedido(elemento) {
     const custoTotal = custoComida + custoBebida + custoSobremesa;
 
     if (elemento.innerHTML === 'Fechar pedido') {
-        alert('${custoComida} e ${comidaEscolhida}')
         window.open(`https://wa.me/5554996301243?text=Olá,+gostaria+de+fazer+o+pedido:%0a-+Prato:+${comidaEscolhida}%0a-+Bebida:+${bebidaEscolhida}%0a-+Sobremesa:+${sobremesaEscolhida}%0aTotal:+R$+${custoTotal}`)
     }
 }

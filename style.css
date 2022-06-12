@@ -86,9 +86,13 @@ h2 {
 }
 
 
-.prato p {
+.prato h4 {
     font-weight: 400;
     font-size: 16px;
+}
+
+.prato p {
+    display: none;
 }
 
 .prato ion-icon {
