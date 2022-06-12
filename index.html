@@ -17,82 +17,81 @@
         <p>Sua comida em 6 minutos</p>
     </div>
 
-    <div class="categoria">
-        <h1>Primeiro, seu prato</h1>
-        <div class="menu-categoria">
-            <div class="prato">
-                <img src="/images/" alt="foto da comida" />
-                <h1>nome da comida</h1>
-                <p>descrição da comida</p>
-                <p>preço</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
-            </div>
-            <div class="prato">
-                <img src="/images/" alt="foto da comida" />
-                <h1>nome da comida</h1>
-                <p>descrição da comida</p>
-                <p>preço</p>
-            </div>
-            <div class="prato">
-                <img src="/images/" alt="foto da comida" />
-                <h1>nome da comida</h1>
-                <p>descrição da comida</p>
-                <p>preço</p>
-            </div>
+    <h2>Primeiro, seu prato</h2>
+    <div class="menu-categoria">
+        <div class="prato" onclick="selecionarComida(this); finalizarPedido()">
+            <img src="/images/" alt="foto da comida" />
+            <h1>nome da comida</h1>
+            <p>descrição da comida</p>
+            <p>preço</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="prato" onclick="selecionarComida(this); finalizarPedido()">
+            <img src="/images/" alt="foto da comida" />
+            <h1>nome da comida</h1>
+            <p>descrição da comida</p>
+            <p>preço</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="prato" onclick="selecionarComida(this); finalizarPedido()">
+            <img src="/images/" alt="foto da comida" />
+            <h1>nome da comida</h1>
+            <p>descrição da comida</p>
+            <p>preço</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
     </div>
 
-    <div class="categoria">
-        <h1>Agora, sua bebida</h1>
-        <div class="menu-categoria">
-            <div class="prato">
-                <img src="/images/" alt="foto da comida" />
-                <h1>nome da comida</h1>
-                <p>descrição da comida</p>
-                <p>preço</p>
-            </div>
-            <div class="prato">
-                <img src="/images/" alt="foto da comida" />
-                <h1>nome da comida</h1>
-                <p>descrição da comida</p>
-                <p>preço</p>
-            </div>
-            <div class="prato">
-                <img src="/images/" alt="foto da comida" />
-                <h1>nome da comida</h1>
-                <p>descrição da comida</p>
-                <p>preço</p>
-            </div>
+    <div class="menu-categoria">
+        <div class="prato" onclick="selecionarBebida(this); finalizarPedido()">
+            <img src="/images/" alt="foto da bebida" />
+            <h1>nome da bebida</h1>
+            <p>descrição da bebida</p>
+            <p>preço</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="prato" onclick="selecionarBebida(this); finalizarPedido()">
+            <img src="/images/" alt="foto da bebida" />
+            <h1>nome da bebida</h1>
+            <p>descrição da bebida</p>
+            <p>preço</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="prato" onclick="selecionarBebida(this); finalizarPedido()">
+            <img src="/images/" alt="foto da bebida" />
+            <h1>nome da bebida</h1>
+            <p>descrição da bebida</p>
+            <p>preço</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
     </div>
 
-    <div class="categoria">
-        <h1>Por fim, sua sobremesa</h1>
-        <div class="menu-categoria">
-            <div class="prato">
-                <img src="/images/" alt="foto da comida" />
-                <h1>nome da comida</h1>
-                <p>descrição da comida</p>
-                <p>preço</p>
-            </div>
-            <div class="prato">
-                <img src="/images/" alt="foto da comida" />
-                <h1>nome da comida</h1>
-                <p>descrição da comida</p>
-                <p>preço</p>
-            </div>
-            <div class="prato">
-                <img src="/images/" alt="foto da comida" />
-                <h1>nome da comida</h1>
-                <p>descrição da comida</p>
-                <p>preço</p>
-            </div>
+    <div class="menu-categoria">
+        <div class="prato" onclick="selecionarSobremesa(this); finalizarPedido()">
+            <img src="/images/" alt="foto da sobremesa" />
+            <h1>nome da sobremesa</h1>
+            <p>descrição da sobremesa</p>
+            <p>preço</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="prato" onclick="selecionarSobremesa(this); finalizarPedido()">
+            <img src="/images/" alt="foto da sobremesa" />
+            <h1>nome da sobremesa</h1>
+            <p>descrição da sobremesa</p>
+            <p>preço</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="prato" onclick="selecionarSobremesa(this); finalizarPedido()">
+            <img src="/images/" alt="foto da sobremesa" />
+            <h1>nome da sobremesa</h1>
+            <p>descrição da sobremesa</p>
+            <p>preço</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
     </div>
 
     <div class="bottom-bar">
-        <button class="pedido-incompleto">Selecione os 3 itens para fechar o pedido</button>
-        <button class="pedido-completo">Fechar pedido</button>
+        <button class="finalizar">Selecione os 3 itens para fechar o pedido</button>
     </div>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

@@ -9,6 +9,15 @@ body {
     width: 414px;
 }
 
+h2 {
+    font-family: 'Righteous', cursive;
+    color: #333333;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 17px;
+    padding-left: 19px;
+    background-color: green;
+}
 
 .top-bar {
     background-color: #CF2B2B;
@@ -24,6 +33,7 @@ body {
     justify-content: center;
     padding-left: 21px;
     margin-bottom: 31px;
+    box-shadow: 0px 5px 5px rgba(43, 42, 42, 0.384);
 }
 
 .top-bar h1 {
@@ -36,27 +46,17 @@ body {
     font-size: 18px;
 }
 
-.categoria {
-    font-family: 'Righteous', cursive;
-    background-color: green;
-    color: #333333;
-    font-weight: 400;
-    font-size: 26px;
-    margin-top: 27px;
-    padding-left: 19px;
-    width: 100%;
-}
-
 .menu-categoria {
-    background-color: gold;
     font-family: 'Roboto', sans-serif;
     padding-top: 17px;
+    padding-bottom: 10px;
+    padding-left: 19px;
     display: flex;
     overflow-x: scroll;
 }
 
 .prato {
-    background-color: lightcoral;
+    background-color: #FFFFFF;
     margin-right: 16px;
     width: 172px;
     height: 216px;
@@ -66,6 +66,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    box-shadow: 0px 0px 5px rgba(75, 75, 75, 0.3);
 }
 
 .prato img {
@@ -95,6 +96,31 @@ body {
     font-size: 19px;
     right: 11px;
     bottom: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.comidaSelecionada {
+    box-shadow: inset 0 0 0 5px green;
+}
+
+.comidaSelecionada ion-icon {
+    color: green;
+}
+
+.bebidaSelecionada {
+    box-shadow: inset 0 0 0 5px green;
+}
+
+.bebidaSelecionada ion-icon {
+    color: green;
+}
+
+.sobremesaSelecionada {
+    box-shadow: inset 0 0 0 5px green;
+}
+
+.sobremesaSelecionada ion-icon {
+    color: green;
 }
 
 .bottom-bar {
@@ -108,18 +134,19 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #FFFFFF;
 }
 
 .bottom-bar button {
     width: 364px;
     height: 61px;
-    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 80px;
 }
 
-.pedido-incompleto {
+.finalizar {
+    border-radius: 50px;
     background-color: #CBCBCB;
     font-weight: 400;
 }
