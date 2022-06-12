@@ -80,13 +80,13 @@ h2 {
     font-size: 16px;
 }
 
-.prato p:first-of-type {
+.prato h3 {
     font-weight: 300;
     font-size: 15px;
 }
 
 
-.prato p:last-of-type {
+.prato p {
     font-weight: 400;
     font-size: 16px;
 }
