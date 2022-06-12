@@ -23,6 +23,7 @@ function selecionarBebida(elemento) {
     if (bebida !== null) {
         bebida.classList.remove("bebidaSelecionada");
     }
+    elemento.classList.add("bebidaSelecionada");
     bebidaEscolhida = elemento.getElementsByTagName("h1")[0].innerHTML;
     custoBebida = Number(elemento.getElementsByTagName("p")[0].innerHTML);
 }
@@ -32,6 +33,7 @@ function selecionarSobremesa(elemento) {
     if (sobremesa !== null) {
         sobremesa.classList.remove("sobremesaSelecionada");
     }
+    elemento.classList.add("sobremesaSelecionada");
     sobremesaEscolhida = elemento.getElementsByTagName("h1")[0].innerHTML;
     custoSobremesa = Number(elemento.getElementsByTagName("p")[0].innerHTML);
 }
