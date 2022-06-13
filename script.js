@@ -51,9 +51,10 @@ function finalizarPedido() {
 }
 
 function enviarPedido(elemento) {
-    const custoTotal = custoComida + custoBebida + custoSobremesa;
-
     if (elemento.innerHTML === 'Fechar pedido') {
-        window.open(`https://wa.me/5554996301243?text=Olá,+gostaria+de+fazer+o+pedido:%0a-+Prato:+${comidaEscolhida}%0a-+Bebida:+${bebidaEscolhida}%0a-+Sobremesa:+${sobremesaEscolhida}%0aTotal:+R$+${custoTotal}`)
+        const custoTotal = custoComida + custoBebida + custoSobremesa;
+        let custoFinal = custoTotal.toFixed(2);
+        const link = `https://wa.me/5554996301243?text=Olá,+gostaria+de+fazer+o+pedido:%0a-+Prato:+${comidaEscolhida}%0a-+Bebida:+${bebidaEscolhida}%0a-+Sobremesa:+${sobremesaEscolhida}%0aTotal:+R$+${custoFinal}`;
+        window.open(link)
     }
 }
