@@ -54,6 +54,8 @@ function enviarPedido(elemento) {
     if (elemento.innerHTML === 'Fechar pedido') {
         const custoTotal = custoComida + custoBebida + custoSobremesa;
         let custoFinal = custoTotal.toFixed(2);
+        //const link = encodeURIComponent(`https://wa.me/5554996301243?text=Olá, gostaria de fazer o pedido: - Prato: ${comidaEscolhida} - Bebida: ${bebidaEscolhida} - Sobremesa: ${sobremesaEscolhida} Total: R$ ${custoFinal}`)
+        //o encode está transformando caracteres como : / e quebrando o link
         const link = `https://wa.me/5554996301243?text=Olá,+gostaria+de+fazer+o+pedido:%0a-+Prato:+${comidaEscolhida}%0a-+Bebida:+${bebidaEscolhida}%0a-+Sobremesa:+${sobremesaEscolhida}%0aTotal:+R$+${custoFinal}`;
         window.open(link)
     }
